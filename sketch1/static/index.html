@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>sketch 1</title>
+</head>
+
+<body>
+    <header>
+
+
+        <label>camera</label>
+        <select id="camerasSelect">
+            <option value="sdgsdg">sdsdg</option>
+        </select>
+
+        <label>delay (seconds) </label>
+        <input type="text" id="inputDelay" value="1" />
+
+        <button onclick="clickStart()">start</button>
+        <button onclick="clickStop()">stop</button>
+
+    </header>
+
+    <div class="pageContainer">
+        <div class="vidArea">
+
+            <div class="videoHolder">
+                <div id="videoLiveContainer" class="vidContainer">
+                    <video id="videoLive" src="" autoplay class="box vid"></video>
+                </div>
+            </div>
+
+            <div class="videoHolder">
+                <div id="videoDelayContainer" class="vidContainer">
+                    <video id="videoDelay1" src="" autoplay class="box vid"></video>
+                    <video id="videoDelay2" src="" autoplay class="box vid hide"></video>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../src/app.js"></script>
+</body>
+
+</html>

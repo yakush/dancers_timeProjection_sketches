@@ -1,0 +1,63 @@
+html {    
+    overflow: hidden;
+}
+body {
+    
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;    
+    
+    margin:0;
+    background: black;
+    color: white;
+}
+
+
+header {    
+    height: 80px; /* Height of header */
+    line-height:80px; /* vertical align the title*/
+    width: 100%;
+    background-color:rgb(17, 17, 17); 
+}
+
+.pageContainer{
+    display: flex;
+    flex: 1;     
+}
+
+.vidArea{
+    display: flex;
+    flex:1;
+    flex-direction: row;
+    
+}
+
+.videoHolder{
+    flex:1;
+}
+
+.vidContainer{
+    width: 90%;
+    height: 90%;
+}
+.vid{
+    width: 100%;
+    height: 100%;
+} 
+
+.box{
+    border:1px solid rgb(26, 26, 26);
+    background:black;
+}
+
+.hide{
+      display:none;
+}
+
+.draggable{
+    position:relative;
+    z-index: 1000;    
+}
+.draggable.dragging{
+   
+}
