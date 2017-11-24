@@ -5,6 +5,8 @@ body {
     
     display: flex;
     min-height: 100vh;
+    width: 100vw;
+
     flex-direction: column;    
     
     margin:0;
@@ -14,10 +16,24 @@ body {
 
 
 header {    
+    box-sizing: border-box;
+    padding: 10px;
     height: 80px; /* Height of header */
-    line-height:80px; /* vertical align the title*/
     width: 100%;
     background-color:rgb(17, 17, 17); 
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.button{
+    cursor: default;
+}
+
+.button:hover{
+    text-decoration: underline;
 }
 
 .pageContainer{
